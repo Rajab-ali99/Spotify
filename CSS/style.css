@@ -303,3 +303,9 @@ h1{
     font-size: 20px;
     font-weight: 700;
 }
+.hamburger{
+    display: none;
+}
+.none{
+    display: none;
+}

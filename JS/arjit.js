@@ -115,6 +115,9 @@ async function main(){
         } 
         
       })
+      document.querySelector(".volume").getElementsByTagName("input")[0].addEventListener("change", (e)=>{
+        currentsong.volume= parseInt(e.target.value)/100
+      })
       singer= "Arjit Singh"
       playlistname.innerHTML= singer
       

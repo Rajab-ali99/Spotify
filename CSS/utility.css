@@ -50,3 +50,9 @@
     text-decoration: none;
     color: white;
 }
+.gap15{
+    gap: 15px;
+}
+.gap10{
+    gap: 10px;
+}

@@ -103,7 +103,7 @@ async function main(){
        
        next.addEventListener("click",()=>{ 
         let index =songs.indexOf(currentsong.src.split("/").slice(-1)[0])
-        if(index+1 <= songs.length) {
+        if(index+1 < songs.length) {
           playmusic(songs[index + 1])
         } 
         
@@ -114,6 +114,9 @@ async function main(){
           playmusic(songs[index - 1])
         } 
         
+      })
+      document.querySelector(".volume").getElementsByTagName("input")[0].addEventListener("change", (e)=>{
+        currentsong.volume= parseInt(e.target.value)/100
       })
       singer= "Sidhu moose Wala"
       playlistname.innerHTML= singer

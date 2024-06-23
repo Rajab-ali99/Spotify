@@ -7,6 +7,7 @@
     <title>Rokhri-playlist</title>
     <link rel="stylesheet" href="/CSS/playlist.css">
     <link rel="stylesheet" href="/CSS/utility.css">
+    <link rel="stylesheet" href="/CSS/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,11 +19,14 @@
     <div class="main">
         <div class="left">
             <div class="home-container">
-                <img class="filter" src="/logos/logo.svg" alt="logo" width="85px">
+                <div class="flex justify1">
+                    <img class="filter" src="/logos/logo.svg" alt="logo" width="85px">
+                    <img class="none" src="/logos/close.svg" alt="">
+                </div>
                 <ul class="flex colum gap">
                     <li class="flex gap align">
                         <img class="filter" src="/logos/home.svg" alt="" width="25px">
-                        <a href="">Home</a>
+                        <a href="/index.html">Home</a>
                     </li>
                     <li class="flex gap align">
                         <img class="filter" src="/logos/search.svg" alt="" width="25px">
@@ -47,12 +51,15 @@
         </div>
         <div class="right">
             <div class="head">
-                <div class="righthead">
-                    <div class="arrowbox">
-                        <img src="/logos/back.svg" alt="">
+                <div class="righthead flex align">
+                    <div class="hamburger">
+                        <img src="/logos/hamburger.svg" alt="">
                     </div>
                     <div class="arrowbox">
-                        <img src="/logos/forward.svg" alt="">
+                        <a href="/index.html"><img src="/logos/back.svg" alt=""></a>
+                    </div>
+                    <div class="arrowbox">
+                        <a href="/HTML/sidhu.html"><img src="/logos/forward.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="lefthead">
@@ -80,9 +87,15 @@
                         </div>
                     </div>
                     <div class="songbuttons">
-                        <img id="previous" src="/logos/prev.svg" alt="">
-                        <img id="play" src="/logos/playsong.svg" alt="">
-                        <img id="next" src="/logos/next.svg" alt="">
+                        <div class="flex justify align gap15">
+                            <img id="previous" src="/logos/prev.svg" alt="">
+                            <img id="play" src="/logos/playsong.svg" alt="">
+                            <img id="next" src="/logos/next.svg" alt="">
+                        </div>
+                        <div class="volume flex justify align gap10">
+                            <img src="/logos/volume.svg" alt="">
+                            <input type="range" name="volume" id="">
+                        </div>
                     </div>
 
                 </div>
@@ -94,6 +107,15 @@
         <div class="developer">Developed by @Rajab</div>
     </div>
 </body>
+<script>
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+     document.querySelector(".left").style.left= 0;
+     document.querySelector(".left").style.width= "90vw";
+    })
+    document.querySelector(".none").addEventListener("click",()=>{
+        document.querySelector(".left").style.left= "-400px";
+    })
+</script>
 <script src="/JS/shaffahullah.js"></script>
 
 </html>
