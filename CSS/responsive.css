@@ -1,0 +1,78 @@
+@media screen and (max-width:890px){
+    .left{
+        position: absolute;
+        left: -200px;
+        z-index: 12;
+        transition: all ease-out .5s;
+
+    }
+    .right{
+        width: 100vw;
+    }
+    .rightmain{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .cardimg {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        align-content: center;
+        margin-left: 15px;
+        top: 7px;
+        position: relative;
+    }
+    .cardimg img {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        object-fit: cover;
+    }
+    .card {
+        height: 355px;
+        width: 320px;
+        position: relative;
+        margin-bottom: 45px;
+    }
+    .songbuttons{
+        gap: 5px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .volume{
+        gap: 10px;
+    }
+    .playbar-sec{
+        height: 500px;
+    }
+   
+    .sectionimg img {
+        object-fit: cover;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+    }
+    .sectionimg {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        bottom: 55px;
+    }
+    .signbtn{
+        margin: 0;
+    }
+    .logbtn{
+        margin: 0 10px;
+    }
+    .lefthead{
+        gap: 10px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .none{
+        display: block;
+    }
+}
