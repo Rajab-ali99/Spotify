@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh-playlist</title>
+    <link rel="stylesheet" href="/CSS/playlist.css">
+    <link rel="stylesheet" href="/CSS/utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/CSS/responsive.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="home-container">
+                <div class="flex justify1">
+                    <img class="filter" src="/logos/logo.svg" alt="logo" width="85px">
+                    <img class="none" src="/logos/close.svg" alt="">
+                </div>
+                <ul class="flex colum gap">
+                    <li class="flex gap align">
+                        <img class="filter" src="/logos/home.svg" alt="" width="25px">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="flex gap align">
+                        <img class="filter" src="/logos/search.svg" alt="" width="25px">
+                        <a class="scnd" href="">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="lib-container">
+                <div class="header flex justify1 align">
+                    <div class="fst flex align gap">
+                        <img class="filter" src="/logos/lib.svg" alt="" width="25px">
+                        <span>Your Library</span>
+                    </div>
+                    <div><img class="filter" src="/logos/plus.svg" alt=""></div>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="head">
+                <div class="righthead flex align">
+                    <div class="hamburger">
+                        <img src="/logos/hamburger.svg" alt="">
+                    </div>
+                    <div class="arrowbox">
+                        <a href="/index.html"><img src="/logos/back.svg" alt=""></a>
+                    </div>
+                    <div class="arrowbox">
+                        <a href="/HTML/sidhu.html"><img src="/logos/forward.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="lefthead">
+                    <button class="signbtn">Sign up</button>
+                    <button class="logbtn">Log in</button>
+                </div>
+            </div>
+            <h1 id="playlistname" class="txtcenter">Sidhu moose wala</h1>
+            <div class="playbar-sec">
+                
+                <div class="sectionimg">
+               <img src="/imgs/Shubh.webp" alt="">
+                </div>
+                <div class="playbar gray">
+                    <div class="songsection">
+                        <div class="song">
+
+                        </div>
+                        <div class="duration">
+
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <div class="songbuttons">
+                        <div class="flex justify align gap15">
+                            <img id="previous" src="/logos/prev.svg" alt="">
+                            <img id="play" src="/logos/playsong.svg" alt="">
+                            <img id="next" src="/logos/next.svg" alt="">
+                        </div>
+                        <div class="volume flex justify align gap10">
+                            <img src="/logos/volume.svg" alt="">
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>Music Player</span>
+        <div class="developer">Developed by @Rajab</div>
+    </div>
+</body>
+<script>
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+     document.querySelector(".left").style.left= 0;
+     document.querySelector(".left").style.width= "90vw";
+    })
+    document.querySelector(".none").addEventListener("click",()=>{
+        document.querySelector(".left").style.left= "-400px";
+    })
+</script>
+<script src="/JS/shubh.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+.filter{
+    filter: invert(1);
+}
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+}
+.colum{
+    flex-direction: column;
+}
+.gap{
+    gap: 20px;
+}
+.justify1{
+    justify-content: space-between;
+}
+.txtcenter{
+    text-align: center;
+}
+.m-5{
+    margin: 10px;
+}
+.blue{
+    background-color: rgb(0 0 225);
+}
+.orange{
+    background-color: #ff3b00;
+}
+.gray{
+    background-color: #585656;
+}
+.red{
+    background-color: #ff0101;
+}
+.brown{
+    background-color: #563914;
+}
+.yellow{
+    background-color: #ffd400c7;
+}
+.green{
+    background-color: #2ab32e;
+}
+.a{
+    text-decoration: none;
+    color: white;
+}
+.gap15{
+    gap: 15px;
+}
+.gap10{
+    gap: 10px;
+}
+.none{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
